@@ -2,3 +2,34 @@
 <!-- Remember to start by typing a single exclamation point (!) and then hitting enter or selecting the first dropdown option.-->
 <!-- This will give you the basic, necessary skeletal elements of a webpage so you can begin coding to our specific requirements! -->
 <!-- Good luck! You've got this! -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 2 Project</title>
+</head>
+<form name="myForm" onsubmit="handleFormSubmit(event)">
+    <label for="username">Username:</label>
+    <input type="text" name="username" placeholder="enter your username" required>
+
+    <label for="checkbox">Favorite Fruit:</label>
+    <input type="checkbox" name="fruit" value="Apple"> Apple
+    <input type="checkbox" name="fruit" value="Banana"> Banana
+    <input type="checkbox" name="fruit" value="Orange"> Orange
+     
+    <label for="radio">Gender:</label>
+    <input type="radio" name="gender" value="Male" checked required> Male
+    <input type="radio" name="gender" value="Female"> Female
+    <input type="radio" name="gender" value="Other"> Other
+
+    <label for="country">Country:</label>
+    <select name="country" required>
+        <option value="usa">USA</option>
+        <option value="canada">Canada</option>
+        <option value="uk">UK</option>
+    </select>
+
+    <input type="submit" value="Submit">
+</form>
+</html>
